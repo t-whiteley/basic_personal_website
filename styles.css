@@ -1,0 +1,44 @@
+h2 {
+    margin-bottom: 15px;
+}
+.photo {
+    margin-top: 20px;
+    width: 120px;
+    padding: 0;
+    border-radius: 4px;
+    text-align: center;
+}
+.navbar {
+    margin: 0px 0px;
+    line-height: 1.45;
+    text-align: center;
+}
+.naventry {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0;
+}
+form {
+    display: inline-block;
+}
+.center {
+    text-align: center;
+}
+.top {
+    vertical-align: top;
+}
+@media (max-width: 768px) {
+    .responsive-table {
+        display: block;
+    }
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .responsive-table td {
+        display: block;
+    }
+    .resp-allign {
+        text-align: center;
+    }
+}
