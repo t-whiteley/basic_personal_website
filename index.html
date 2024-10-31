@@ -3,54 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Maintenance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>WHITELEY'S | Home</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            font-family: 'Times New Roman', sans-serif;
             margin: 0;
-            font-family: 'Josefin Sans', sans-serif;
+            padding: 0;
             text-align: center;
-            background-color: #ffffff;
-        }
-        header {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        header img {
-            max-width: 15%;
-            height: auto;
         }
         h1 {
-            font-size: 1.5em;
-            color: #333;
-            margin: 10;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
+            font-family: 'Libre Baskerville', serif;
+            font-size: medium;
+            letter-spacing: 5px;
             margin: 0;
+            color: white;
         }
-        a {
-            color: #007BFF;
+        h2 {
+            /* font-family: 'Libre Baskerville', serif; */
+            font-size: large;
+            color: red;
+            margin-top: 20px;
+        }
+        .custom-container-padding {
+            padding-left: 20vw;
+            padding-right: 20vw;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+        .custom-heading {
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
             text-decoration: none;
+            font-size: 12px;
             font-weight: bold;
+            font-family: 'Libre Baskerville', serif;
         }
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            gap: 0px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <img src="logo.png" alt="Whiteley Systems Logo">
+        <div class="custom-container-padding custom-heading">
+            <h1>WHITELEY'S</h1>
+            <!-- <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav> -->
+        </div>
     </header>
-    <h1>SITE UNDER DEVELOPMENT</h1>
-    <p>For queries regarding our software solutions, please <a href="mailto:tomas@whiteley.ch">contact us</a>.</p>
+
+    <main>
+        <div class="custom-container-padding">
+            <div class="gif-container">
+                <img src="g1.gif" style="width: 50%;" alt="GIF 1">
+                <img src="g2.gif" style="width: 50%;" alt="GIF 2">
+            </div>
+
+            <div style="text-align: left;">
+                <h2>***RECENT PROJECT: Impeller Meta-Model***</h2>
+                <p>Applying Physics-Informed Neural Networks (PINNs) as a Navier Stokes in the Rotational Frame of Reference surrogate model for a three dimensional impeller.</p>
+                <p>PyTorch, OpenFOAM automation, NN training, design parameterisation, multi-objective optimisation</p>
+                <p>Usecases: (1) A fast surrogate to CFD for evolutionary optimisation (2) A real-time informed digital-twin, predicting physics-conforming behaviour</p>
+            </div>
+
+            <hr>
+
+            <div style="text-align: right;">
+                <h4 style="margin-bottom: 0;">Tomas Whiteley</h2>
+                    <p style="margin: 0;">MEng Mechanical Engineering</p>
+                    <a style="margin: 0;" href="mailto:tomaswhiteley@ucsb.edu"><i>University of California, Santa Barbara</i></a><br>
+                    <a style="margin: 0;" href="mailto:tomas.whiteley.22@ucl.ac.uk"><i>University College London</i></a><br>
+                    <a style="margin: 0;" href="https://github.com/t-whiteley">github |</a>
+                    <a style="margin: 0;" href="https://www.linkedin.com/in/tomas-whiteley2004/">linkedin</a>
+
+            </div>
+
+
+        </div>
+    </main>
+
 </body>
 </html>
