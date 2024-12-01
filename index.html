@@ -133,10 +133,23 @@
                     </ul>
                 </ul>
             </div>
+        </div>
+        <div class="custom-container-padding">
+            <hr>
+            <h1 class=h1sub><u>Non-Linear Rocket Guidance Control System</u></h1>
+            <div class="gif-container">
+                <img src="g3.png" style="width: 60%;" alt="GIF 1">
+            </div>
 
-            
-            
-            
+            <div style="text-align: left;">
+                <ul>
+                    <li>Developed an airbrake mechanism that extends flaps to slow a rocket down to desired apogee.</li>
+                    <li>Utilized KiCad for comprehensive circuit design of a flight computer, including schematics and PCB layout. Combining different components and sensors (IMU, Baro, GPS, Radio)</li>
+                    <li>Programmed the flight computer and GNC in C and C++, designed a state of the art Extended Statistical Kalman Filter for precise state estimation, using quaternion mathematics for orientation and position calculations.</li>
+                    <li>Implemented PID control by building lookup tables of drag coefficients using OpenFOAM CFD automations in C++, which are called by the rocket control system during flight.</li>
+                    <li>Calculated the predicted apogee in real-time using an efficient Runge-Kutta numerical algorithm, enabling the solution of a non-linear ODE that accounts for rocket drag.</li>
+                </ul>
+            </div>
         </div>
         
         <div class="custom-container-padding" style="text-align: right;">
